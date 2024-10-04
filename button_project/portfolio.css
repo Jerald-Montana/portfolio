@@ -1,0 +1,222 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 1000vh;
+}
+
+.navbar {
+    background-color: rgb(239, 238, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.left-part {
+    margin-left: 50px; 
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 16px 0;
+}
+.logo {
+    color: rgb(199, 92, 76);
+    font-weight: bold;
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+.logo:hover {
+    transform: scale(1.3);
+}
+
+.navbar a {
+    display: inline-block;
+    color: rgb(199, 92, 76);
+    border: 2px solid transparent;
+    padding: 14px 18px;
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: border-top-color 0.3s, border-bottom-color 0.3s, transform 0.3s ;
+}
+
+.navbar a:hover {
+    border-top-color: rgb(199, 92, 76);
+    border-bottom-color: rgb(199, 92, 76);
+    transform: scale(1.2);
+    color: rgb(199, 92, 76);
+}
+
+.navbar a:active{
+    opacity: 0.5;
+}
+
+.navbutton{
+    height: 20px;
+    width: 35px;
+    padding: 16px 0;
+    padding-right: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.navbutton:hover{
+    transform: scale(1.2);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color:rgb(194, 181, 181);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links a {
+        padding: 13px;
+        border-bottom: 1px solid #555;
+    }
+}
+
+.front-page{
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-logo {
+    width: 500px; 
+    height: auto; 
+    margin-right: 50px; 
+    margin-left: 45px;
+}
+.picture{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: rgb(199, 92, 76);
+    border-width: 5px;
+    transition: transform 0.3s ease;
+}
+.picture:hover{
+    transform: scale(1.1); 
+    box-shadow: 10px 10px 10px rgb(20, 19, 19);
+}
+.fixed-logo img {
+    width: 100%; 
+    height: auto; 
+}
+@media (max-width: 768px) {
+    .front-page {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+.content h1{
+    font-size: 35px;
+    font-weight: 700;
+} 
+
+.content p{
+    width: 70%;
+    flex-direction: column; 
+    align-items: center; 
+}
+.content{
+    width: 60%;
+    padding-left: 50px 
+}
+.Name{
+    color:rgb(199, 92, 76);
+}
+
+.content .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none; 
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.content .links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+.content .links li {
+    margin-right: 15px;
+}
+
+
+.content .links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: rgb(199, 92, 76);
+    background-color: white;
+    border: solid;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.content .links a:hover {
+    background-color: rgb(199, 92, 76);
+    color: white;
+}
+
+/* Style for the buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 15px;
+    background-color: rgb(199, 92, 76);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    transition: opacity 0.3s ease, transform 0.3s ease ;
+}
+
+.buttons .btn:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}

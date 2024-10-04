@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="button_project/portfolio.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="left-part">
+            <div class="logo">Jerald</div>
+        </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <img src="Images/navbar.png" class="navbutton">
+            </div>
+    </div>
+
+    <div class="front-page">
+    <div class="fixed-logo">
+        <img src="Images/2x22.jpg" alt="Fixed-logo" class="picture">
+    </div>
+
+    <div class="content">
+        <h1>Hello, My name is <span class="Name">Jerald Niño Montana</span>.</h1>
+        <p>Welcome to my portfolio! I'm passionate about blending technology and creativity to solve real-world problems. With hands-on experience in robotics competitions, web development, and software design, I bring ideas to life through innovation and collaboration. Whether it's building dynamic web interfaces or engineering automated systems, my goal is to continually push boundaries and inspire others in the tech space. </p>
+        
+        <div class="links">
+            <li class="icon">
+                <a href="https://www.facebook.com/JeraldMontanaa/" target="_blank"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li class="icon">
+                <a href="https://www.linkedin.com/in/jerald-montana-490bb0249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            </li>
+            <li class="icon">
+                <a href="https://www.github.com" target="_blank"><i class="ri-github-line"></i></a>
+            </li>
+        </div>
+        <div class="buttons">
+            <a href="Resume-updated.jpg" target="_blank" class="btn">View Resume</a>
+            <a href="#contact-section" class="btn contact">Contact Me</a>
+        </div>
+    </div>
+    <script>
+       function toggleMenu() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+}
+    </script>
+</body>
+</html>
